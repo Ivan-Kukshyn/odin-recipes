@@ -5,21 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lasagna recipe</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href=" " type=" ">
+    <link rel="stylesheet" href="recipes.css" />
 </head>
 
 <body>
-    <div class="return-to-main">
-        <a href="../index.html">Return to main page of recipes</a>
-    </div>
-    <a href="../index.html">Return to main page of recipes</a>
+    <header class="header" id="header">
+        <div class="header_logo">
+            <a href="../index.html">ODIN RECIPES</a>
+            <a href="../index.html">Return to main</a>
+        </div>
+        <nav>
+            <ul class="header_items_list">
+                <li class="header_search"><a href="#">Search</a></li>
+                <li class="header_logout"><a href="#">Logout</a></li>
+                <li class="header_profile"><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
     <div class="container" id="container">
         <div class="recipe-card feature">
             <img src="../images/lasagna.jpg" alt="Lasagna">
             <div class="recipe-content">
                 <h1 id="header">Lasagna</h1>
                 <p>
-                    Lasagna is a popular Italian dish that consists of layers of flat pasta sheets, alternating with
+                    Lasagna is a popular <span class="highlight">Italian dish</span> that consists of layers of flat
+                    pasta sheets, alternating with
                     various fillings and sauces. The traditional version of lasagna typically includes layers of cooked
                     pasta sheets, rich meat-based Bolognese sauce (ragù), creamy béchamel sauce, and grated Parmesan or
                     other cheeses.
@@ -38,7 +50,7 @@
                     <li>Cheeses</li>
                     <li>Egg</li>
                 </ul>
-                <h3><strong>How to Make Lasagna</strong></h3>
+                <h3>How to Make Lasagna</h3>
                 <ol>
                     <li>Make the meat sauce.</li>
                     <li>Cook the noodles.</li>
@@ -49,7 +61,7 @@
                 </ol>
                 <ul>
             </div>
-            <a href="#header">Return to top</a>
+            <a href="#header">Return to top</a><a href="../index.html">Save recipe</a>
         </div>
     </div>
 </body>

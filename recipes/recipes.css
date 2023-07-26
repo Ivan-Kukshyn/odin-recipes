@@ -1,0 +1,210 @@
+/* ========== CHALLENGE 1 ========== //
+//
+// Use the type selector to:
+// 1. Set the image width to 200px
+// 2. Set the list style of <ul> to none
+// 3. Add a dark red color to the <h1>
+//
+*/
+
+/* ========== CHALLENGE 1 ========== //
+//
+// Add some padding and margins to our elements, give the
+//      -- recipe-card an equal margin of 20px 
+//      and a padding of 50px
+//      -- recipe-content an equal padding of 20px
+//      -- paragraphs a bottom margin of 20px
+//      -- link an equal margin of 20px 
+//      and a padding of 10px (top and bottom) 12px (left and right)
+*/
+
+/* ========== CHALLENGE 2 ========== //
+//
+// 1. Style the recipe card so that it has a 
+//      -- background color of #FFFAFA
+//      -- text is aligned center
+// 2. Set text inside recipe-content to align left
+//
+*/
+
+/* ========== CHALLENGE 3 ========== //
+//
+// 1. Change <h2> or <h3> elements within a <ul> and <li> to be 16px
+// 2. Update recipe card link styles, set:
+//      -- background color to #fc9400
+//      -- text color to white
+//      -- remove underline
+*/
+
+* {
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(90deg, rgb(212, 51, 51), grey);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: rgb(23, 3, 5);
+    color: white;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+}
+
+.header_logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header_logo a {
+    padding-right: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    margin-bottom: 20px;
+}
+
+.container h1 {
+    font-style: italic;
+    text-align: center;
+    color: darkred;
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.container h3 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.container a {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.container li {
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+}
+
+.container ul {
+    padding-top: 15px;
+    list-style: none;
+}
+
+span.highlight {
+    background-color: pink;
+    color: darkred;
+    padding: 0 3px;
+    margin: 0 -3px;
+}
+
+.gallery {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.gallery-item {
+    scroll-snap-align: center;
+    min-width: 75%;
+}
+
+.gallery_image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipe-card a {
+    margin-right: 10px;
+    font-size: 15px;
+    position: relative;
+    text-transform: uppercase;
+    padding: 10px 12px 10px 12px;
+}
+
+.recipe-card img {
+    border-radius: 10px;
+    margin: 0 -60px;
+    width: 350px;
+    height: 250px;
+    border: 2px solid darkred;
+}
+
+.recipe-card {
+    border-radius: 10px;
+    text-align: center;
+    margin: 30px auto;
+    padding: 30px 50px;
+    width: 400px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+}
+
+.recipe-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.recipe-card.feature {
+    width: 67%;
+    height: 70%;
+    background: white;
+    border: 1px solid darkred;
+}
+
+.recipe-card a {
+    background-color: darkred;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 2px;
+}
